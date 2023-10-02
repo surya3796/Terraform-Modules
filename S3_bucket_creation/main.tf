@@ -14,9 +14,3 @@ resource "aws_s3_bucket_versioning" "versioning_example" {
     status = "Enabled"
   }
 }
-
-resource "aws_s3_object" "file" {
-  bucket = var.bucket_name
-  key    = "testfile"
-  source = "${path.module}/test.txt"
-}
