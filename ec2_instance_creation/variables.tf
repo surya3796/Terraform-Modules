@@ -1,3 +1,7 @@
+variable "region_name" {
+    description = "value for region"
+}
+
 variable "access_key_value" {
     description = "value for access key"
 }
